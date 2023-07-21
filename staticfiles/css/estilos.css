@@ -1,0 +1,14 @@
+body {
+    background-color: #341256;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+img {
+    width: 300px; /* Defina a largura desejada */
+    height: auto; /* A altura será ajustada proporcionalmente */
+}

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <h1>Produto</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ produto.nome_produto }}</td>
+                    <td>{{ produto.preco_produto }}</td>
+                    <td>{{ produto.estoque_produto }}</td>
+                </tr>
+        </tbody>
+    </table>
+    </br>
+    <button type="button"><a href ="{% url 'index'  %}">Voltar</a></button>
+</body>
+</html>
